@@ -11,9 +11,9 @@
         </div>
         <div class="links">
             <ul>
-                <li class="link about"><a href="#">About</a></li>
-                <li class="link success"><a href="#">Success</a></li>
-                <li class="link contact"><a href="#">Contact</a></li>
+                <li class="link" onmouseover="hover(this)" onmouseout="hover(this)"><a href="about.html">About</a></li>
+                <li class="link" onmouseover="hover(this)" onmouseout="hover(this)"><a href="#">Success</a></li>
+                <li class="link" onmouseover="hover(this)" onmouseout="hover(this)"><a href="#">Contact</a></li>
             </ul>
         </div>
         <div class="footer">
@@ -49,18 +49,30 @@
             duration: 500
         });
 
-        var bounce = anime({
+        var bounce = anime.timeline({loop: false})
+        .add({
             targets: '.content .logo',
             opacity: [0,1],
-            scale: [1.5,0.75],
+            scale: [1.5,0.5],
+            rotate: -7.5,
+            duration: 500
+        })
+        .add({
+            targets: '.content .logo',
+            scale: [0.5,0.75],
             rotate: 7.5,
-            loop: false,
-            autoplay: false,
-            duration: 250
+            duration: 350
         });
-        document.querySelector('.content .logo').onclick = bounce.play;
 
-        document.querySelectorAll('.content .links .link').onmouseover = bounce.play;
+        function hover(e) {
+            anime.timeline({loop: false})
+            .add({
+            targets: e,
+            rotate: function() { return anime.random(-12, 12);},
+            });
+        }
+
+        document.querySelector('.content .logo').onclick = bounce.play;
     </script>
 </body>
 </html>

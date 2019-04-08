@@ -17,6 +17,15 @@ ul {
     padding-inline-start: 0px;
 }
 
+h2 {
+    font-size: 200%;
+    background: #cb356b;
+    background: -webkit-linear-gradient(to right, #cb356b, #bd3f32);
+    background: linear-gradient(to right, #cb356b, #bd3f32);
+    -webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
 a {
     font-size: 200%;
     text-decoration: none;
@@ -36,7 +45,8 @@ a {
 }
 
 a:hover {
-	cursor:url("../img/cursor.png"), auto;
+    cursor:url("../img/cursor.png"), auto;
+    text-decoration: underline !important;
 }
 
 .content {
@@ -54,6 +64,8 @@ h1 {
     -moz-user-select: none;
     -khtml-user-select: none;
     -ms-user-select: none;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 h1:hover {

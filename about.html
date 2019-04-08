@@ -1,0 +1,78 @@
+<html>
+<head>
+    <script src="./js/anime.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <title>shrimp.wtf | About</title>
+</head>
+<body>
+    <div class="content">
+        <div class="logo">
+            <h1>shrimp.wtf</h1>
+        </div>
+        <h2 class="header">About</h2>
+        <div class="page">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ullamcorper lectus est, eu consequat tortor ultrices id. Curabitur iaculis lorem et orci dapibus tempus. Vivamus placerat erat sed ante interdum, at finibus nunc malesuada. Nulla eu fermentum enim. Vivamus a enim et ante varius mollis. Morbi quis scelerisque ante. Fusce tincidunt, elit non sagittis ultricies, libero dui lacinia tellus, ut porta ligula purus vitae metus. Praesent ut semper magna. Nulla viverra est orci, ut pretium nisi finibus vel. Sed eget rhoncus mauris, a ultrices dui. Aliquam cursus placerat mi, sed consectetur elit posuere a.
+
+                Ut convallis ultrices ligula eget ornare. Quisque vitae convallis augue, et gravida quam. Integer quis mauris massa. Duis euismod scelerisque tincidunt. Phasellus ut lacus tortor. Curabitur eros nisi, mattis in dui vitae, pretium euismod turpis. Sed eu porttitor enim. In hac habitasse platea dictumst. Suspendisse eleifend placerat ullamcorper.
+                
+                Donec eu sollicitudin magna. Praesent in lorem ut nibh sollicitudin auctor eu eu ante. Phasellus pretium sem in mi tristique molestie. Maecenas feugiat semper est, vitae dapibus leo maximus non. Pellentesque scelerisque dictum neque eu rutrum. Nulla vestibulum mollis mollis. Maecenas et leo sed tortor dapibus auctor. Sed ut elit elementum, suscipit purus quis, egestas ante. Praesent mollis arcu elit, a tempor est convallis a. Donec faucibus lorem sit amet varius sollicitudin. Sed dolor purus, ullamcorper ac mi eget, varius facilisis nisl. Integer vel ligula id leo mattis molestie. Donec feugiat purus massa, luctus lobortis tellus blandit sit amet. Vestibulum urna massa, volutpat eget nulla sed, posuere convallis nulla. Nullam convallis enim id condimentum interdum. Nullam mauris dui, vestibulum non tristique ac, elementum nec nunc.
+                
+                Vestibulum arcu ligula, dignissim vel libero ut, porta luctus urna. Maecenas tristique mattis arcu, vitae volutpat orci consectetur vel. In in magna in ligula convallis gravida et in leo. Donec sit amet risus sed libero finibus tempus ac vitae justo. Vestibulum et metus a metus viverra feugiat quis a augue. Vivamus in sagittis erat. Vestibulum nec justo at mi congue ultricies.
+                
+                Cras varius eleifend tellus eu aliquam. Cras purus sapien, efficitur in diam vitae, blandit efficitur lorem. Praesent bibendum velit sit amet tempor interdum. Nulla fringilla vitae risus ut ullamcorper. Sed mattis molestie massa, vitae vulputate elit pharetra nec. Mauris volutpat, justo non blandit imperdiet, tortor quam rhoncus mauris, id euismod nisl urna nec est. Cras et elit in massa suscipit interdum.</p>
+            <div class="footer">
+                <p>&copy;shrimp</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        anime.timeline({loop: false})
+        .add({
+            targets: '.content .logo',
+            opacity: [0,1],
+            scale: [1.5,0.5],
+            rotate: -7.5,
+            duration: 500
+        })
+        .add({
+            targets: '.content .logo',
+            scale: [0.5,0.75],
+            rotate: 7.5,
+            duration: 350
+        })
+        .add({
+            targets: '.content .page',
+            opacity: [0,1],
+            scale: [1.2,1],
+            duration: 250
+        })
+        .add({
+            targets: '.content .header',
+            opacity: [0,1],
+            rotate: function() { return anime.random(-10, 10);},
+            scale: [0,1],
+            delay: 100
+        });
+
+        function bounce(){
+            anime.timeline({loop: false})
+        .add({
+            targets: '.content .logo',
+            opacity: [0,1],
+            scale: [1.5,0.5],
+            rotate: -7.5,
+            duration: 500
+        })
+        .add({
+            targets: '.content .logo',
+            scale: [0.5,0.75],
+            rotate: 7.5,
+            duration: 350
+        });
+        window.location.href = 'index.html';
+        }
+
+        document.querySelector('.content .logo').onclick = bounce;
+    </script>
+</body>
+</html>
