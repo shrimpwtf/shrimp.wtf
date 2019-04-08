@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura-Bold.woff2') format('woff2'),
+        url('fonts/Futura-Bold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Futura', sans-serif;
+}
+
+.content {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.logo {
+    font-size: 300%;
+    background: #e43a15;
+    background: -webkit-linear-gradient(to right, #e43a15, #e65245);
+    background: linear-gradient(to right, #e43a15, #e65245);
+    -webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
