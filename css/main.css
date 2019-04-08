@@ -10,6 +10,33 @@ body {
     font-family: 'Futura', sans-serif;
 }
 
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+a {
+    font-size: 200%;
+    text-decoration: none;
+    background: #cb356b;
+    background: -webkit-linear-gradient(to right, #cb356b, #bd3f32);
+    background: linear-gradient(to right, #cb356b, #bd3f32);
+    -webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.footer {
+    background: #200122;
+    background: -webkit-linear-gradient(to right, #200122, #6f0000);
+    background: linear-gradient(to right, #200122, #6f0000);
+    -webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+a:hover {
+	cursor:url("../img/cursor.png"), auto;
+}
+
 .content {
     margin: auto;
     width: 50%;

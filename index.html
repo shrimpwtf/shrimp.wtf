@@ -8,6 +8,16 @@
         <div class="logo">
             <h1>shrimp.wtf</h1>
         </div>
+        <div class="links">
+            <ul>
+                <li class="link"><a href="#">About</a></li>
+                <li class="link"><a href="#">Success</a></li>
+                <li class="link"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>&copy;shrimp</p>
+        </div>
     </div>
     <script>
         anime.timeline({loop: false})
@@ -24,6 +34,19 @@
             rotate: 7.5,
             duration: 250
         })
+        .add({
+            targets: '.content .links .link',
+            opacity: [0,1],
+            rotate: function() { return anime.random(-10, 10);},
+            scale: [0,1],
+            delay: anime.stagger(150)
+        })
+        .add({
+            targets: '.content .footer',
+            opacity: [0,1],
+            scale: [0,1],
+            duration: 750
+        });
     </script>
 </body>
 </html>
