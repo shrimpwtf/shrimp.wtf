@@ -32,20 +32,20 @@
             targets: '.content .logo',
             scale: [0.5,0.75],
             rotate: 7.5,
-            duration: 250
+            duration: 350
         })
         .add({
             targets: '.content .links .link',
             opacity: [0,1],
             rotate: function() { return anime.random(-10, 10);},
             scale: [0,1],
-            delay: anime.stagger(150)
+            delay: anime.stagger(75)
         })
         .add({
             targets: '.content .footer',
             opacity: [0,1],
             scale: [0,1],
-            duration: 750
+            duration: 500
         });
     </script>
 </body>

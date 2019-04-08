@@ -8,6 +8,8 @@
 
 body {
     font-family: 'Futura', sans-serif;
+    background-image: url("../img/WTF.png");
+    background-repeat: repeat;
 }
 
 ul {
@@ -38,13 +40,20 @@ a:hover {
 }
 
 .content {
-    margin: auto;
-    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
 .logo {
-    font-size: 300%;
+    font-size: 600%;
     background: #e43a15;
     background: -webkit-linear-gradient(to right, #e43a15, #e65245);
     background: linear-gradient(to right, #e43a15, #e65245);
