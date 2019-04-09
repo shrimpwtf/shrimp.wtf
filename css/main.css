@@ -12,7 +12,10 @@ body {
     background-repeat: repeat;
 }
 
-ul {
+ul,li { list-style-type: none;
+    list-style-position:inside;
+    margin:0;
+    padding:0; 
     list-style-type: none;
     padding-inline-start: 0px;
 }
@@ -36,7 +39,7 @@ a {
   	-webkit-text-fill-color: transparent;
 }
 
-.footer {
+.footer p{
     background: #200122;
     background: -webkit-linear-gradient(to right, #200122, #6f0000);
     background: linear-gradient(to right, #200122, #6f0000);
@@ -74,6 +77,9 @@ h1:hover {
 
 .logo {
     font-size: 600%;
+}
+
+.logo h1{
     background: #e43a15;
     background: -webkit-linear-gradient(to right, #e43a15, #e65245);
     background: linear-gradient(to right, #e43a15, #e65245);
