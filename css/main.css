@@ -29,6 +29,14 @@ h2 {
   	-webkit-text-fill-color: transparent;
 }
 
+h3 {
+    background: #cb356b;
+    background: -webkit-linear-gradient(to right, #cb356b, #bd3f32);
+    background: linear-gradient(to right, #cb356b, #bd3f32);
+    -webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
 a {
     font-size: 200%;
     text-decoration: none;

@@ -12,8 +12,10 @@
         <div class="links">
             <ul>
                 <li class="link" onmouseover="hover(this)" onmouseout="hover(this)"><a href="about.html">About</a></li>
+                <li class="link" onmouseover="hover(this)" onmouseout="hover(this)"><a href="services.html">Services</a></li>
                 <li class="link" onmouseover="hover(this)" onmouseout="hover(this)"><a href="#">Success</a></li>
-                <li class="link" onmouseover="hover(this)" onmouseout="hover(this)"><a href="#">Contact</a></li>
+                <li class="link" onmouseover="hover(this)" onmouseout="hover(this)"><a href="#">Tools</a></li>
+                <li class="link" onmouseover="hover(this)" onmouseout="hover(this)"><a href="contact.html">Contact</a></li>
             </ul>
         </div>
         <div class="footer">
@@ -35,15 +37,13 @@
             duration: 350
         })
         .add({
-            targets: '.content .links .link',
-            rotate: function() { return anime.random(-10, 10);},
+            targets: ['.content .links .link', '.footer'],
             scale: [0,1],
             delay: anime.stagger(75)
         })
         .add({
-            targets: '.content .footer',
-            scale: [0,1],
-            duration: 500
+            targets: '.link',
+            rotate: function() { return anime.random(-10, 10);}
         });
 
         var bounce = anime.timeline({loop: false})

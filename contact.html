@@ -1,0 +1,69 @@
+<html>
+<head>
+    <script src="./js/anime.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <title>shrimp.wtf | Contact</title>
+</head>
+<body>
+    <div class="content">
+        <div class="logo">
+            <h1><span>shrimp.wtf</span></h1>
+        </div>
+        <h2 class="header">Contact</h2>
+        <div class="page">
+            <h3 class="title">Discord: shrimp#0001</h3>
+            <h3 class="title">Twitter: @shrimpyuk</h3>
+            <div class="footer">
+                <p>&copy;shrimp</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        anime.timeline({loop: false})
+        .add({
+            targets: '.content .logo',
+            opacity: [0,1],
+            scale: [1.5,0.5],
+            rotate: -7.5,
+            duration: 500
+        })
+        .add({
+            targets: '.content .logo',
+            scale: [0.5,0.75],
+            rotate: 7.5,
+            duration: 350
+        })
+        .add({
+            targets: ['.header', '.title', '.footer'],
+            scale: [1.2,1],
+            delay: anime.stagger(75),
+            opacity: [0,1]
+        })
+        .add({
+            targets: ['.content .header', '.title'],
+            rotate: function() { return anime.random(-10, 10);},
+            delay: 100
+        });
+
+        function bounce(){
+            anime.timeline({loop: false})
+        .add({
+            targets: '.content .logo',
+            opacity: [0,1],
+            scale: [1.5,0.5],
+            rotate: -7.5,
+            duration: 500
+        })
+        .add({
+            targets: '.content .logo',
+            scale: [0.5,0.75],
+            rotate: 7.5,
+            duration: 350
+        });
+        window.location.href = 'index.html';
+        }
+
+        document.querySelector('.content .logo').onclick = bounce;
+    </script>
+</body>
+</html>

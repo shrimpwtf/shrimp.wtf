@@ -20,9 +20,9 @@
                 Vestibulum arcu ligula, dignissim vel libero ut, porta luctus urna. Maecenas tristique mattis arcu, vitae volutpat orci consectetur vel. In in magna in ligula convallis gravida et in leo. Donec sit amet risus sed libero finibus tempus ac vitae justo. Vestibulum et metus a metus viverra feugiat quis a augue. Vivamus in sagittis erat. Vestibulum nec justo at mi congue ultricies.
                 
                 Cras varius eleifend tellus eu aliquam. Cras purus sapien, efficitur in diam vitae, blandit efficitur lorem. Praesent bibendum velit sit amet tempor interdum. Nulla fringilla vitae risus ut ullamcorper. Sed mattis molestie massa, vitae vulputate elit pharetra nec. Mauris volutpat, justo non blandit imperdiet, tortor quam rhoncus mauris, id euismod nisl urna nec est. Cras et elit in massa suscipit interdum.</p>
-            <div class="footer">
-                <p>&copy;shrimp</p>
-            </div>
+        </div>
+        <div class="footer">
+            <p>&copy;shrimp</p>
         </div>
     </div>
     <script>
@@ -41,16 +41,14 @@
             duration: 350
         })
         .add({
-            targets: '.content .page',
-            opacity: [0,1],
+            targets: ['.content .page', '.footer', '.header'],
             scale: [1.2,1],
-            duration: 250
+            delay: anime.stagger(75),
+            opacity: [0,1]
         })
         .add({
             targets: '.content .header',
-            opacity: [0,1],
             rotate: function() { return anime.random(-10, 10);},
-            scale: [0,1],
             delay: 100
         });
 
