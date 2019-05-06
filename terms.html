@@ -1,0 +1,85 @@
+<html>
+<head>
+    <script src="./js/anime.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <title>shrimp.wtf | Terms and Conditions</title>
+</head>
+<body>
+    <div class="content">
+        <div class="logo" style="padding-top:30px;">
+            <h1><span>shrimp.wtf</span></h1>
+        </div>
+        <h2 class="header">Terms and Conditions</h2>
+        <div class="page">
+            <p>TERMS OF SERVICE
+<br>
+                ----
+                <br>                
+                Add To Cart Service
+                <br>                
+                By purchasing our add to cart service you the buyer are hiring us as an Independent Contractor on your behalf to buy a product for you.
+                <br>   <br>  
+This means that you are contracting us (shrimp.wtf) to add a product to checkout for you (Buyer) online. We will add the product to your cart with the login information that you provided, on your behalf in good faith of payment for services rendered and on the grounds of successful checkout. You are paying shrimp.wtf for the time spent adding the product to your cart and checkout; not for the product itself. You agree that you are buying our time not a service or product because that is against the websites rules (Nike, Supreme, Adidas…).
+<br>   <br>  
+You agree that we are not responsible for any outcome of us acting on your behalf. You agree to receive no benefits/compensation etc from us if such a situation should take place with website, You, shrimp.wtf. or its owners. You agree not to take any legal action against shrimp.wtf. or its owners and forfeit any and all compensation.
+<br>   <br>  
+You agree that any money spent on our services are non-refundable if succeeded, or if the slots are Non-refundable Slots. Any charge backs (Bank and credit card fraud and or reversals) will result in a cancellation of any services obtained. We reserve the right to use your information to fight any charge-backs including any personal information we have for you. We reserve the right to present your information to our lawyers for legal action against any charge-backs. You agree that any refunds that are due to be issued are to be issued at our sole discretion. We (shrimp.wtf) agree to refund 100% of all money obtained from buyer if we feel the service was not completed from our side.
+<br>   <br>  
+After our service is completed the contract shall be terminated. You agree that shrimp.wtf will no longer be responsible for anything that happens once we checkout the product for you. You agree that any cancellations or product error is your responsibility and to not hold shrimp.wtf liable for anything. Shipment of wrong products, wrong size of product, sold out products or errors on any website store are not our problem. After the contract has been terminated you agree that no refund will be given due to services having been already rendered.
+<br>   <br>  
+You must contact your Bank to tell them not decline any payment, and allow all charges on the release day, almost all of the Banks will decline Cards charges because of some security features. If we try and checkout your order and your card gets declined, your order will fail, and it’s not something we’re responsible for, the fee that you provide us with will be claimed.</p>
+        </div>
+        <div class="footer">
+            <p>&copy;shrimp</p>
+            <p><a href="privacy.html">Privacy Policy</a> - <a href="terms.html">Terms and Conditions</a> - <a>Accessibility Policy</a></p>
+        </div>
+    </div>
+    <script>
+        anime.timeline({loop: false})
+        .add({
+            targets: '.content .logo',
+            opacity: [0,1],
+            scale: [1.5,0.5],
+            rotate: -7.5,
+            duration: 500
+        })
+        .add({
+            targets: '.content .logo',
+            scale: [0.5,0.75],
+            rotate: 7.5,
+            duration: 350
+        })
+        .add({
+            targets: ['.content .page', '.footer', '.header'],
+            scale: [1.2,1],
+            delay: anime.stagger(75),
+            opacity: [0,1]
+        })
+        .add({
+            targets: '.content .header',
+            rotate: function() { return anime.random(-10, 10);},
+            delay: 100
+        });
+
+        function bounce(){
+            anime.timeline({loop: false})
+        .add({
+            targets: '.content .logo',
+            opacity: [0,1],
+            scale: [1.5,0.5],
+            rotate: -7.5,
+            duration: 500
+        })
+        .add({
+            targets: '.content .logo',
+            scale: [0.5,0.75],
+            rotate: 7.5,
+            duration: 350
+        });
+        window.location.href = 'index.html';
+        }
+
+        document.querySelector('.content .logo').onclick = bounce;
+    </script>
+</body>
+</html>

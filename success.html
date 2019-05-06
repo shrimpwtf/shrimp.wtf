@@ -21,11 +21,18 @@
             <div class="success-container">
                 <blockquote class="twitter-tweet" data-lang="en" width="250"><p lang="und" dir="ltr">s/o <a href="https://twitter.com/BoostProphets?ref_src=twsrc%5Etfw">@BoostProphets</a> <a href="https://twitter.com/PulseNotify?ref_src=twsrc%5Etfw">@PulseNotify</a> <a href="https://t.co/3G80zrAvDj">pic.twitter.com/3G80zrAvDj</a></p>&mdash; shrimp (@shrimpyuk) <a href="https://twitter.com/shrimpyuk/status/1120019183083892737?ref_src=twsrc%5Etfw">April 21, 2019</a></blockquote>
             </div>
+            <div class="success-container">
+                <blockquote class="twitter-tweet" data-lang="en" width="250"><p lang="en" dir="ltr">Shoutout <a href="https://twitter.com/PulseNotify?ref_src=twsrc%5Etfw">@PulseNotify</a> for the SNKRS Sratch <a href="https://t.co/wytmURiAU6">pic.twitter.com/wytmURiAU6</a></p>&mdash; shrimp (@shrimpyuk) <a href="https://twitter.com/shrimpyuk/status/1122465176698130433?ref_src=twsrc%5Etfw">April 28, 2019</a></blockquote>
+            </div>
+            <div class="success-container">
+                <blockquote class="twitter-tweet" data-lang="en" width="250"><p lang="en" dir="ltr">Special thanks to <a href="https://twitter.com/shrimpyuk?ref_src=twsrc%5Etfw">@shrimpyuk</a> for the alert before other groups had posted 🥳 <a href="https://t.co/TezIyRqf48">pic.twitter.com/TezIyRqf48</a></p>&mdash; Dill (@PiickIes) <a href="https://twitter.com/PiickIes/status/1123383860660776960?ref_src=twsrc%5Etfw">May 1, 2019</a></blockquote>
+            </div>
         </div>
         
 
         <div class="footer">
             <p>&copy;shrimp</p>
+            <p><a href="privacy.html">Privacy Policy</a> - <a href="terms.html">Terms and Conditions</a> - <a>Accessibility Policy</a></p>
         </div>
     </div>
     <script>
@@ -43,7 +50,7 @@
             duration: 350
         })
         .add({
-            targets: ['.success-container'],
+            targets: ['.success-container', '.header'],
             scale: [1.5,1],
             opacity: [0,1],
             delay: anime.stagger(75)
@@ -56,14 +63,14 @@
         function bounce(){
             anime.timeline({loop: false})
             .add({
-                targets: '.content .logo',
+                targets: '.content-success .logo',
                 opacity: [0,1],
                 scale: [1.5,0.5],
                 rotate: -7.5,
                 duration: 500
             })
             .add({
-                targets: '.content .logo',
+                targets: '.content-success .logo',
                 scale: [0.5,0.75],
                 rotate: 7.5,
                 duration: 350
@@ -71,7 +78,7 @@
             window.location.href = 'index.html';
         }
 
-        document.querySelector('.content .logo').onclick = bounce;
+        document.querySelector('.content-success .logo').onclick = bounce;
 
         function hover(e) {
             anime.timeline({loop: false})

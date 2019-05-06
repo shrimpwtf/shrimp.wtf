@@ -22,6 +22,16 @@ ul,li { list-style-type: none;
     list-style-type: none;
     padding-inline-start: 0px;
 }
+.success {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, 450px);
+}
+
+.success-container{
+    padding-bottom:100px;
+}
 
 h2 {
     font-size: 200%;
@@ -40,8 +50,13 @@ h3 {
   	-webkit-text-fill-color: transparent;
 }
 
-a {
+.link a{
     font-size: 200%;
+}
+
+a {
+    padding-bottom:1px;
+    padding-top:1px;
     text-decoration: none;
     background: #cb356b;
     background: -webkit-linear-gradient(to right, #cb356b, #bd3f32);
