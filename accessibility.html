@@ -6,13 +6,13 @@
     <title>shrimp.wtf | Privacy Policy</title>
 </head>
 <body>
-    <div class="content">
+    <div class="content-large">
         <div class="logo" style="padding-top:30px;">
             <h1><span>shrimp.wtf</span></h1>
         </div>
-        <h2 class="header">Accessibility</h2>
+        <h2 class="header">Accessibility Statement for <span class="basic-information website-name">shrimp</span></h2>
         <div class="page">
-            <h2>Accessibility Statement for <span class="basic-information website-name">shrimp</span></h2>
+            
 <p>
 	<span class="basic-information organization-name">shrimp</span>
 	is committed to ensuring digital accessibility for people with disabilities.
@@ -88,47 +88,47 @@
         </div>
         <div class="footer">
             <p>&copy;shrimp</p>
-            <p><a href="privacy.html">Privacy Policy</a> - <a href="terms.html">Terms and Conditions</a> - <a>Accessibility Policy</a></p>
+            <p><a href="privacy.html">Privacy Policy</a> - <a href="terms.html">Terms of Service</a> - <a href="accessibility.html">Accessibility Policy</a></p>
         </div>
     </div>
     <script>
         anime.timeline({loop: false})
         .add({
-            targets: '.content .logo',
+            targets: '.content-large .logo',
             opacity: [0,1],
             scale: [1.5,0.5],
             rotate: -7.5,
             duration: 500
         })
         .add({
-            targets: '.content .logo',
+            targets: '.content-large .logo',
             scale: [0.5,0.75],
             rotate: 7.5,
             duration: 350
         })
         .add({
-            targets: ['.content .page', '.footer', '.header'],
+            targets: ['.content-large .page', '.footer', '.header'],
             scale: [1.2,1],
             delay: anime.stagger(75),
             opacity: [0,1]
         })
         .add({
-            targets: '.content .header',
-            rotate: function() { return anime.random(-10, 10);},
+            targets: ['.content-large .header', 'h3'],
+            rotate: function() { return anime.random(-7.5, 7.5);},
             delay: 100
         });
 
         function bounce(){
             anime.timeline({loop: false})
         .add({
-            targets: '.content .logo',
+            targets: '.content-large .logo',
             opacity: [0,1],
             scale: [1.5,0.5],
             rotate: -7.5,
             duration: 500
         })
         .add({
-            targets: '.content .logo',
+            targets: '.content-large .logo',
             scale: [0.5,0.75],
             rotate: 7.5,
             duration: 350
@@ -136,7 +136,7 @@
         window.location.href = 'index.html';
         }
 
-        document.querySelector('.content .logo').onclick = bounce;
+        document.querySelector('.content-large .logo').onclick = bounce;
     </script>
 </body>
 </html>

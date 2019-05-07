@@ -101,7 +101,7 @@ a:hover {
     text-align: center;
 }
 
-.content-success {
+.content-large {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);

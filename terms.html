@@ -3,24 +3,20 @@
     <script src="./js/anime.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>shrimp.wtf | Terms and Conditions</title>
+    <title>shrimp.wtf | Terms of Service</title>
 </head>
 <body>
-    <div class="content">
+    <div class="content-large">
         <div class="logo" style="padding-top:30px;">
             <h1><span>shrimp.wtf</span></h1>
         </div>
-        <h2 class="header">Terms and Conditions</h2>
+        <h2 class="header">Terms of Service</h2>
         <div class="page">
-            <p>TERMS OF SERVICE
-<br>
-                ----
-                <br>                
-                Add To Cart Service
+            <p>Add To Cart Service
                 <br>                
                 By purchasing our add to cart service you the buyer are hiring us as an Independent Contractor on your behalf to buy a product for you.
                 <br>   <br>  
-This means that you are contracting us (shrimp.wtf) to add a product to checkout for you (Buyer) online. We will add the product to your cart with the login information that you provided, on your behalf in good faith of payment for services rendered and on the grounds of successful checkout. You are paying shrimp.wtf for the time spent adding the product to your cart and checkout; not for the product itself. You agree that you are buying our time not a service or product because that is against the websites rules (Nike, Supreme, Adidas…).
+This means that you are contracting us (shrimp.wtf) to add a product to checkout for you (Buyer) online. We will add the product to your cart with the login information that you provided, on your behalf in good faith of payment for services rendered and on the grounds of successful checkout. You are paying shrimp.wtf for the time spent adding the product to your cart and checkout; not for the product itself. You agree that you are buying our time not a service or product because that is against the websites rules (Nike, Supreme, Adidas...).
 <br>   <br>  
 You agree that we are not responsible for any outcome of us acting on your behalf. You agree to receive no benefits/compensation etc from us if such a situation should take place with website, You, shrimp.wtf. or its owners. You agree not to take any legal action against shrimp.wtf. or its owners and forfeit any and all compensation.
 <br>   <br>  
@@ -32,32 +28,32 @@ You must contact your Bank to tell them not decline any payment, and allow all c
         </div>
         <div class="footer">
             <p>&copy;shrimp</p>
-            <p><a href="privacy.html">Privacy Policy</a> - <a href="terms.html">Terms and Conditions</a> - <a>Accessibility Policy</a></p>
+            <p><a href="privacy.html">Privacy Policy</a> - <a href="terms.html">Terms of Service</a> - <a href="accessibility.html">Accessibility Policy</a></p>
         </div>
     </div>
     <script>
         anime.timeline({loop: false})
         .add({
-            targets: '.content .logo',
+            targets: '.content-large .logo',
             opacity: [0,1],
             scale: [1.5,0.5],
             rotate: -7.5,
             duration: 500
         })
         .add({
-            targets: '.content .logo',
+            targets: '.content-large .logo',
             scale: [0.5,0.75],
             rotate: 7.5,
             duration: 350
         })
         .add({
-            targets: ['.content .page', '.footer', '.header'],
+            targets: ['.content-large .page', '.footer', '.header'],
             scale: [1.2,1],
             delay: anime.stagger(75),
             opacity: [0,1]
         })
         .add({
-            targets: '.content .header',
+            targets: '.content-large .header',
             rotate: function() { return anime.random(-10, 10);},
             delay: 100
         });
@@ -65,14 +61,14 @@ You must contact your Bank to tell them not decline any payment, and allow all c
         function bounce(){
             anime.timeline({loop: false})
         .add({
-            targets: '.content .logo',
+            targets: '.content-large .logo',
             opacity: [0,1],
             scale: [1.5,0.5],
             rotate: -7.5,
             duration: 500
         })
         .add({
-            targets: '.content .logo',
+            targets: '.content-large .logo',
             scale: [0.5,0.75],
             rotate: 7.5,
             duration: 350
@@ -80,7 +76,7 @@ You must contact your Bank to tell them not decline any payment, and allow all c
         window.location.href = 'index.html';
         }
 
-        document.querySelector('.content .logo').onclick = bounce;
+        document.querySelector('.content-large .logo').onclick = bounce;
     </script>
 </body>
 </html>

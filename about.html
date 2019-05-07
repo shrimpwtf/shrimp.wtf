@@ -6,44 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="content">
+    <div class="content-large">
         <div class="logo" style="padding-top:30px;">
             <h1><span>shrimp.wtf</span></h1>
         </div>
         <h2 class="header">About</h2>
         <div class="page">
-            <p>I'm a full-time student and developer from the UK. I've been in the sneaker resell game for over 2 years. During that time I've learned a lot of the tricks used to secure limited items and gradually see more success and made dozens of contacts for further assistance and information. I have top of the range servers to minimize the checkout times on specific sites, and also create my own proxies optimized for sneaker botting.</p>
+            <p>I'm a full-time student, reseller and developer from the UK. I've been in the sneaker resell game for over 2 years. During that time I've learned a lot of the tricks used to secure limited items and gradually see more success and made dozens of contacts for further assistance and information. I have top of the range servers to minimize the checkout times on specific sites, and also create my own proxies optimized for sneaker botting.</p>
             <p>I'm currently working on making some tools of my own for securing these items, some of which have never seen before speeds within the sneaker resell game (more info to come soon)</p>
             <p>I'm capable of coding in the following languages: JS, HTML, CSS, C#, NodeJS, Java & Rust.</p>
         </div>
         <div class="footer">
                 <p>&copy;shrimp</p>
-                <p><a href="privacy.html">Privacy Policy</a> - <a href="terms.html">Terms and Conditions</a> - <a>Accessibility Policy</a></p>
+                <p><a href="privacy.html">Privacy Policy</a> - <a href="terms.html">Terms of Service</a> - <a href="accessibility.html">Accessibility Policy</a></p>
             </div>
     </div>
     <script>
         anime.timeline({loop: false})
         .add({
-            targets: '.content .logo',
+            targets: '.content-large .logo',
             opacity: [0,1],
             scale: [1.5,0.5],
             rotate: -7.5,
             duration: 500
         })
         .add({
-            targets: '.content .logo',
+            targets: '.content-large .logo',
             scale: [0.5,0.75],
             rotate: 7.5,
             duration: 350
         })
         .add({
-            targets: ['.content .page', '.footer p', '.header'],
+            targets: ['.content-large .page', '.footer p', '.header'],
             scale: [1.2,1],
             delay: anime.stagger(75),
             opacity: [0,1]
         })
         .add({
-            targets: '.content .header',
+            targets: '.content-large .header',
             rotate: function() { return anime.random(-10, 10);},
             delay: 100
         });
@@ -51,14 +51,14 @@
         function bounce(){
             anime.timeline({loop: false})
         .add({
-            targets: '.content .logo',
+            targets: '.content-large .logo',
             opacity: [0,1],
             scale: [1.5,0.5],
             rotate: -7.5,
             duration: 500
         })
         .add({
-            targets: '.content .logo',
+            targets: '.content-large .logo',
             scale: [0.5,0.75],
             rotate: 7.5,
             duration: 350
@@ -66,7 +66,7 @@
         window.location.href = 'index.html';
         }
 
-        document.querySelector('.content .logo').onclick = bounce;
+        document.querySelector('.content-large .logo').onclick = bounce;
     </script>
 </body>
 </html>
